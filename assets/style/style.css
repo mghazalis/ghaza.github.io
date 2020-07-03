@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 1000px 0;
+    overflow: auto;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #30C9E9;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 20px;
+    
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+    transition: 500ms;
+}
+
+.logo {
+    padding-right: 20px;
+    font-weight: bolder;
+}
+
+.jumbotron {
+    background-image: url(../img/education.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    padding: 150px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.btn {
+    background-color: #30cae9ab;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    transition: 300ms;
+
+}
+
+.btn:hover{
+    background-color: #30C9E9;
+}
+
+header>.jumbotron>h1 {
+    letter-spacing: 20px;
+}
+
+header>.jumbotron>p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #30C9E9;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+footer>p>span {
+    margin: 10px;
+}
+
+footer>p>span>a {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+}
+
+footer>p>span>a:hover {
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+footer>p {
+    text-transform: uppercase;
+}
+
+.copyright {
+    font-size: 14px;
+    color: white;
+}
+
+/* untuk tab dan android */
+@media screen and (max-width: 955px) {
+
+    nav {
+        padding: 1px;
+    }
+
+    .jumbotron {
+        padding: 60px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    header>.jumbotron>h1 {
+        letter-spacing: 2px;
+    }
+
+    footer>p>span {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    footer p span a i {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+    nav {
+        padding: 1px;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+    
+    nav a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .logo {
+        margin-right: 5px;
+    }
+
+    header>.jumbotron>h1 {
+        letter-spacing: 2px;
+    }
+
+    footer>p>span {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    footer p span a i {
+        font-size: 16px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+
+}
